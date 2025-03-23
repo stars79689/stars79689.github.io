@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SimBoost: Improving Real-World Driving via Simulated Hard-Case">
+  <meta name="keywords" content="SimBoost, Autonomous Driving, Sim2Real, Multimodal Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimBoost: Improving Real-World Driving via Simulated Hard-Case</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icons/emova.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://kit.fontawesome.com/d3915a16e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><b>SimBoost:</b></h1>
+          <h3 class="title is-3 publication-title">Improving Real-World Driving via Simulated Hard-Case</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="hxbh23@mails.tsinghua.edu.cn">Baihui Xiao</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://fcjian.github.io/">Chengjian Feng</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://zhijian11.github.io/">Zhijian Huang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=gO4divAAAAAJ&hl=zh-CN&oi=sra">Feng Yan</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://y-zhong.info/">Yujie Zhong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://forestlinma.com/">Lin Ma</a><sup>1&#8224</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Meituan Inc.</span>
+            <span class="author-block"><sup>2</sup>Shenzhen Campus of Sun Yat-sen University,</span>
+            <br>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">(<sup>*</sup>Equal contribution.
+            <sup><span>&#8224;</span></sup>Corresponding authors.)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="margin-top: -100px;">
+  <div class="container" style="width: 80%;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <div class="teaser">
+          <img src="./static/images/fig_1.jpeg" width="800" height="800">
+        </div>
+        <p><br/></p>  
+        <div class="content has-text-justified">
+          Figure 1. SimBoost achieves significant improvements in real-world driving capabilities by leveraging simulated hard-case data. We evaluate the benefits of simulated data using representative methods. Results show that the traditional method VAD yields minor gains, while LLaVA-OneVision struggles to improve performance in challenging scenarios. In contrast, our proposed SimBoost achieves over 50% improvement in hard-to-drive situations.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f1f1f1;">
+  <div class="columns is-centered has-text-centered" style="width: 65%; margin: 0 auto;">
+    <div class="column is-five-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+        Collecting real-world data for rare high-risk scenarios, long-tailed driving events, and complex interactions remains challenging, leading to poor performance of existing autonomous driving systems in these critical situations. In this paper, we propose SimBoost, which improves real-world driving in critical situations by utilizing simulated hard cases.
+
+First, we develop a simulated dataset called Hardcase Augmented Synthetic Scenarios (HASS), which covers 13 high-risk edge-case categories as well as balanced environmental conditions such as day/night and sunny/rainy.
+
+Secondly, we introduce Scenario-aware Prompt Engineering (SPE) and an Image-to-Ego Encoder (I2E Encoder) to enable multimodal large language models to effectively learn real-world challenging driving skills from HASS, by adapting to environmental deviations and hardware differences between real and simulated scenarios.
+
+Extensive experiments are conducted on nuScenes, where SimBoost improves driving performance in challenging scenarios by approximately 50%, achieving state-of-the-art results in real-world open-loop planning. Qualitative results further demonstrate the effectiveness of SimBoost in better managing rare high-risk driving scenarios.
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-five-fifths">
+      <h2 class="title is-3">SimBoost Framework</h2>
+      <div class="teaser">
+        <img src="./static/images/fig_4.jpeg" width="1200" height="1200">
+      </div>
+      <p><br/></p>  
+      <div class="content has-text-justified" style="width: 65%; margin: 0 auto;">
+        <p>
+        The overall framework of our proposed end-to-end autonomous driving system. The framework leverages simulation data to enhance performance in real-world scenarios, by integrating videos, 3D transformation, location, data source, and instruction information.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="section">
+  <div class="columns is-centered has-text-centered" style="width: 50%; margin: 0 auto;">
+    <div class="column is-five-fifths">
+      <h2 class="title is-3">Real-World Generalization</h2>
+      <div class="teaser">
+        <img src="./static/images/experiment.png">
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Comparison on the open-loop planning on nuScenes dataset with and without ego pose as input. We report the L2 distance (m), collision rate (%), and boundary violation rate (%) at 1s, 2s, and 3s time horizons, along with their averages.
+        </p>
+      </div>
+      <hr>
+      <div class="teaser">
+        <img src="./static/images/ab_exp.png">
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths">
+      <h2 class="title is-3">Visualizations</h2>
+    </div>
+  </div>
+  <div class="container mt-0">
+    <!-- Visualization carousel preserved as-is -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{anonymous2025simboost,
+  title={SimBoost: Improving Real-World Driving via Simulated Hard-Case},
+  author={Anonymous},
+  journal={arXiv preprint arXiv:0000.00000},
+  year={2025}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer" style="background-color: #f1f1f1;">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="#"><i class="fas fa-file-pdf"></i></a>
+      <a class="icon-link" href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <center>The website template was adapted from <a href="https://nerfies.github.io/">Nerfies</a>.<br/>
+          @ SimBoost Team</center>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
