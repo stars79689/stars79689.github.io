@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  .visualization-figure {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+    transition: box-shadow 0.3s;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 30px;
+  }
+  
+  .visualization-figure:hover {
+    box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+  }
+  
+  .visualization-img {
+    border-radius: 12px;
+    transition: transform 0.35s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 7%);
+  }
+  
+  .visualization-figure:hover .visualization-img {
+    transform: scale(1.10);
+    box-shadow: 0 4px 24px rgb(0 0 0 / 18%);
+  }
+  </style>
+  
   <meta charset="utf-8">
   <meta name="description" content="SimBoost: Improving Real-World Driving via Simulated Hard-Case">
   <meta name="keywords" content="SimBoost, Autonomous Driving, Sim2Real, Multimodal Model">
@@ -208,47 +235,41 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
     <div class="columns is-multiline is-centered">
       <!-- 第一行 -->
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D1.png" alt="H2D1" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D1 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D1.png" alt="H2D1" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D2.png" alt="H2D2" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D2 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D2.png" alt="H2D2" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
       <!-- 第二行 -->
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D3.png" alt="H2D3" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D3 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D3.png" alt="H2D3" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D5.png" alt="H2D5" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D5 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D5.png" alt="H2D5" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
       <!-- 第三行 -->
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D6.png" alt="H2D6" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D6 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D6.png" alt="H2D6" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
       <div class="column is-one-third">
-        <figure>
-          <img src="./static/images/H2D8.png" alt="H2D8" style="width:100%; max-width:320px;">
-          <figcaption class="has-text-grey is-size-6" style="margin-top:0.5em;">H2D8 Visualization</figcaption>
+        <figure class="visualization-figure">
+          <img src="./static/images/H2D8.png" alt="H2D8" class="visualization-img" style="width:100%; max-width:320px;">
         </figure>
       </div>
     </div>
   </div>
 </section>
-
+  
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
