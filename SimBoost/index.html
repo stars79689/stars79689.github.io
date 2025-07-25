@@ -129,10 +129,9 @@
       <div class="column is-five-fifths">
         <div class="teaser">
           <img src="./static/images/fig_1.jpeg" width="800" height="800">
-        </div>
-        <p><br/></p>  
-        <div class="content has-text-justified">
-          Figure 1. SimBoost achieves significant improvements in real-world driving capabilities by leveraging simulated hard-case data. We evaluate the benefits of simulated data using representative methods. Results show that the traditional method VAD yields minor gains, while LLaVA-OneVision struggles to improve performance in challenging scenarios. In contrast, our proposed SimBoost achieves over 50% improvement in hard-to-drive situations.
+          <p class="has-text-grey is-size-6" style="margin-top:0.5em; text-align:center;">
+            Figure 1. SimBoost achieves significant improvements in real-world driving capabilities by leveraging simulated hard-case data. We evaluate the benefits of simulated data using representative methods. Results show that the traditional method VAD yields minor gains, while LLaVA-OneVision struggles to improve performance in challenging scenarios. In contrast, our proposed SimBoost achieves over 50% improvement in hard-to-drive situations.
+          </p>
         </div>
       </div>
     </div>
@@ -152,8 +151,6 @@ First, we develop a simulated dataset called Hardcase Augmented Synthetic Scenar
 Secondly, we introduce Scenario-aware Prompt Engineering (SPE) and an Image-to-Ego Encoder (I2E Encoder) to enable multimodal large language models to effectively learn real-world challenging driving skills from HASS, by adapting to environmental deviations and hardware differences between real and simulated scenarios.
 
 Extensive experiments are conducted on nuScenes, where SimBoost improves driving performance in challenging scenarios by approximately 50%, achieving state-of-the-art results in real-world open-loop planning. Qualitative results further demonstrate the effectiveness of SimBoost in better managing rare high-risk driving scenarios.
-
-
         </p>
       </div>
     </div>
@@ -166,11 +163,8 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
       <h2 class="title is-3">SimBoost Framework</h2>
       <div class="teaser">
         <img src="./static/images/fig_4.jpeg" width="1200" height="1200">
-      </div>
-      <p><br/></p>  
-      <div class="content has-text-justified" style="width: 65%; margin: 0 auto;">
-        <p>
-        Figure 2. The overall framework of our proposed end-to-end autonomous driving system. The framework leverages simulation data to enhance performance in real-world scenarios, by integrating videos, 3D transformation, location, data source, and instruction information.
+        <p class="has-text-grey is-size-6" style="margin-top:0.5em; text-align:center;">
+          Figure 2. The overall framework of our proposed end-to-end autonomous driving system. The framework leverages simulation data to enhance performance in real-world scenarios, by integrating videos, 3D transformation, location, data source, and instruction information.
         </p>
       </div>
     </div>
