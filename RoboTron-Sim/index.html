@@ -29,10 +29,10 @@
   </style>
   
   <meta charset="utf-8">
-  <meta name="description" content="SimBoost: Improving Real-World Driving via Simulated Hard-Case">
-  <meta name="keywords" content="SimBoost, Autonomous Driving, Sim2Real, Multimodal Model">
+  <meta name="description" content="RoboTron-Sim: Improving Real-World Driving via Simulated Hard-Case">
+  <meta name="keywords" content="RoboTron-Sim, Autonomous Driving, Sim2Real, Multimodal Model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SimBoost: Improving Real-World Driving via Simulated Hard-Case</title>
+  <title>RoboTron-Sim: Improving Real-World Driving via Simulated Hard-Case</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"><b>SimBoost:</b></h1>
+          <h1 class="title is-1 publication-title"><b>RoboTron-Sim:</b></h1>
           <h3 class="title is-3 publication-title">Improving Real-World Driving via Simulated Hard-Case</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -110,7 +110,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/stars79689/SimBoost" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/stars79689/RoboTron-Sim" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
@@ -132,7 +132,7 @@
           <div style="max-width:800px; margin:0 auto;">
             <img src="./static/images/fig_1.jpeg" width="800" height="800" style="width:100%; display:block; margin: 0 auto;">
             <p class="has-text-grey is-size-6" style="margin-top:0.5em; text-align:center;">
-              Figure 1. SimBoost achieves significant improvements in real-world driving capabilities by leveraging simulated hard-case data. We evaluate the benefits of simulated data using representative methods. Results show that the traditional method VAD yields minor gains, while LLaVA-OneVision struggles to improve performance in challenging scenarios. In contrast, our proposed SimBoost achieves over 50% improvement in hard-to-drive situations.
+              Figure 1. RoboTron-Sim achieves significant improvements in real-world driving capabilities by leveraging simulated hard-case data. We evaluate the benefits of simulated data using representative methods. Results show that the traditional method VAD yields minor gains, while LLaVA-OneVision struggles to improve performance in challenging scenarios. In contrast, our proposed RoboTron-Sim achieves over 50% improvement in hard-to-drive situations.
             </p>
           </div>
         </div>
@@ -147,13 +147,13 @@
       <h2 class="title is-3">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-        Collecting real-world data for rare high-risk scenarios, long-tailed driving events, and complex interactions remains challenging, leading to poor performance of existing autonomous driving systems in these critical situations. In this paper, we propose SimBoost, which improves real-world driving in critical situations by utilizing simulated hard cases.
+        Collecting real-world data for rare high-risk scenarios, long-tailed driving events, and complex interactions remains challenging, leading to poor performance of existing autonomous driving systems in these critical situations. In this paper, we propose RoboTron-Sim, which improves real-world driving in critical situations by utilizing simulated hard cases.
 
 First, we develop a simulated dataset called Hardcase Augmented Synthetic Scenarios (HASS), which covers 13 high-risk edge-case categories as well as balanced environmental conditions such as day/night and sunny/rainy.
 
 Secondly, we introduce Scenario-aware Prompt Engineering (SPE) and an Image-to-Ego Encoder (I2E Encoder) to enable multimodal large language models to effectively learn real-world challenging driving skills from HASS, by adapting to environmental deviations and hardware differences between real and simulated scenarios.
 
-Extensive experiments are conducted on nuScenes, where SimBoost improves driving performance in challenging scenarios by approximately 50%, achieving state-of-the-art results in real-world open-loop planning. Qualitative results further demonstrate the effectiveness of SimBoost in better managing rare high-risk driving scenarios.
+Extensive experiments are conducted on nuScenes, where RoboTron-Sim improves driving performance in challenging scenarios by approximately 50%, achieving state-of-the-art results in real-world open-loop planning. Qualitative results further demonstrate the effectiveness of RoboTron-Sim in better managing rare high-risk driving scenarios.
         </p>
       </div>
     </div>
@@ -163,7 +163,7 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-five-fifths">
-      <h2 class="title is-3">SimBoost Framework</h2>
+      <h2 class="title is-3">RoboTron-Sim Framework</h2>
       <div class="teaser">
         <!-- 最大宽度与图片一致；图片宽度为1200px -->
         <div style="max-width:1200px; margin:0 auto;">
@@ -280,7 +280,7 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
   </div>
   <!-- Caption for all images -->
   <p class="has-text-grey is-size-6" style="margin-top:1em; text-align:center; max-width:700px; margin-left:auto; margin-right:auto;">
-    <span style="color:green;font-weight:bold;">Green</span> indicates the trajectory generated by SimBoost; 
+    <span style="color:green;font-weight:bold;">Green</span> indicates the trajectory generated by RoboTron-Sim; 
     <span style="color:red;font-weight:bold;">red</span> shows the ground truth (interference); 
     <span style="color:goldenrod;font-weight:bold;">yellow</span> denotes the baseline.
   </p>
@@ -289,8 +289,8 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{anonymous2025simboost,
-  title={SimBoost: Improving Real-World Driving via Simulated Hard-Case},
+    <pre><code>@article{anonymous2025RoboTron-Sim,
+  title={RoboTron-Sim: Improving Real-World Driving via Simulated Hard-Case},
   author={Baihui Xiao, Chengjian Feng, Zhijian Huang, Feng Yan, Yujie Zhong, Lin Ma},
   journal={arXiv preprint arXiv:0000.00000},
   year={2025}
@@ -308,7 +308,7 @@ Extensive experiments are conducted on nuScenes, where SimBoost improves driving
       <div class="column is-8">
         <div class="content">
           <center>The website template was adapted from <a href="https://nerfies.github.io/">Nerfies</a>.<br/>
-          @ SimBoost Team</center>
+          @ RoboTron-Sim Team</center>
         </div>
       </div>
     </div>
